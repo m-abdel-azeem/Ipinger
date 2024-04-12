@@ -160,10 +160,10 @@
         lst_List_IPs.Items.Clear()
 
         Dim objReader As New System.IO.StreamReader(ImportFileName)
-            Do While objReader.Peek <> -1
-                lst_List_IPs.Items.Add(objReader.ReadLine())
-                UpdateCount("list")
-            Loop
+        Do While objReader.Peek <> -1
+            lst_List_IPs.Items.Add(objReader.ReadLine())
+            UpdateCount("list")
+        Loop
 
         DisableEnableBtns(False)
         btn_SaveResults.Enabled = False
@@ -425,7 +425,7 @@
         Results = Results + " |                Online Addresses:                |" + vbNewLine
         Results = Results + " ---------------------------------------------------" + vbNewLine
 
-        If (lst_ONline_IPs.Items.Count mod 2 > 0) Then
+        If (lst_ONline_IPs.Items.Count Mod 2 > 0) Then
             For i = 0 To lst_ONline_IPs.Items.Count - 2 Step 2
                 Results = Results + " " + lst_ONline_IPs.Items(i) + "          " + lst_ONline_IPs.Items(i + 1) + vbNewLine
             Next
@@ -441,7 +441,7 @@
         Results = Results + " |                Offline Addresses:               |" + vbNewLine
         Results = Results + " ---------------------------------------------------" + vbNewLine
 
-        If (lst_OFFline_IPs.Items.Count mod 2 > 0) Then
+        If (lst_OFFline_IPs.Items.Count Mod 2 > 0) Then
             For i = 0 To lst_OFFline_IPs.Items.Count - 2 Step 2
                 Results = Results + " " + lst_OFFline_IPs.Items(i) + "          " + lst_OFFline_IPs.Items(i + 1) + vbNewLine
             Next
@@ -457,7 +457,7 @@
         Results = Results + " |                Invalid Addresses:               |" + vbNewLine
         Results = Results + " ---------------------------------------------------" + vbNewLine
 
-        If (lst_Invalid_IPs.Items.Count mod 2 > 0) Then
+        If (lst_Invalid_IPs.Items.Count Mod 2 > 0) Then
             For i = 0 To lst_Invalid_IPs.Items.Count - 2 Step 2
                 Results = Results + " " + lst_Invalid_IPs.Items(i) + "          " + lst_Invalid_IPs.Items(i + 1) + vbNewLine
             Next
@@ -716,7 +716,7 @@
         Else
             MsgBox("There are no IP addresses to save. Please add some and try again later.", MsgBoxStyle.Exclamation, "No IPs to save.")
         End If
-        
+
     End Sub
 
     Private Sub BackgroundWorkerSaveList_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles BackgroundWorkerSaveList.DoWork
