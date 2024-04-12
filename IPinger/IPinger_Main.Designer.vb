@@ -56,6 +56,8 @@ Partial Class IPinger_Main
         Me.lbl_invalid = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddressesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddAddressToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddIPRangeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -66,8 +68,6 @@ Partial Class IPinger_Main
         Me.ClearResultsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BackgroundAddrange = New System.ComponentModel.BackgroundWorker()
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BackgroundWorkerSaveList = New System.ComponentModel.BackgroundWorker()
         Me.menu_addaddresslist.SuspendLayout()
         Me.menu_deleteaddress.SuspendLayout()
@@ -124,7 +124,7 @@ Partial Class IPinger_Main
         Me.Label1.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(21, 58)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(121, 16)
+        Me.Label1.Size = New System.Drawing.Size(120, 16)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "IP Addresses List"
         '
@@ -135,7 +135,7 @@ Partial Class IPinger_Main
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(224, 79)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(147, 16)
+        Me.Label2.Size = New System.Drawing.Size(146, 16)
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "Online Addresses List"
         '
@@ -146,7 +146,7 @@ Partial Class IPinger_Main
         Me.Label3.ForeColor = System.Drawing.Color.Red
         Me.Label3.Location = New System.Drawing.Point(417, 79)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(149, 16)
+        Me.Label3.Size = New System.Drawing.Size(148, 16)
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "Offline Addresses List"
         '
@@ -354,7 +354,7 @@ Partial Class IPinger_Main
         Me.Label5.ForeColor = System.Drawing.Color.RoyalBlue
         Me.Label5.Location = New System.Drawing.Point(612, 79)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(151, 16)
+        Me.Label5.Size = New System.Drawing.Size(150, 16)
         Me.Label5.TabIndex = 21
         Me.Label5.Text = "Invalid Addresses List"
         '
@@ -390,6 +390,19 @@ Partial Class IPinger_Main
         Me.MenuStrip1.Size = New System.Drawing.Size(848, 24)
         Me.MenuStrip1.TabIndex = 25
         Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'SaveToolStripMenuItem
+        '
+        Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
+        Me.SaveToolStripMenuItem.Text = "Save IP Address List"
         '
         'AddressesToolStripMenuItem
         '
@@ -450,19 +463,6 @@ Partial Class IPinger_Main
         '
         'BackgroundAddrange
         '
-        '
-        'FileToolStripMenuItem
-        '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripMenuItem})
-        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
-        Me.FileToolStripMenuItem.Text = "File"
-        '
-        'SaveToolStripMenuItem
-        '
-        Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
-        Me.SaveToolStripMenuItem.Text = "Save IP Address List"
         '
         'BackgroundWorkerSaveList
         '

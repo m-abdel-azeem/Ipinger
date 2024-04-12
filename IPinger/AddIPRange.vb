@@ -71,6 +71,23 @@
                 e.Handled = False
             Else
                 e.Handled = True
+                If e.KeyChar.ToString = "." Then
+                    ' Points to the current textbox.
+                    Dim boxName As String = DirectCast(sender, TextBox).Name
+                    If boxName.Contains("tbox_IP2") Then Return
+                    Dim boxNum As Int32 = Convert.ToInt32(boxName.Last.ToString)
+                    ' First expression calculates the nextnum, the latter is zero except when boxNum=4,
+                    ' So the nextnum of the last textbox is its num.
+                    ' boxNum=1         -->          2              +            0
+                    ' boxNum=2         -->          3              +            0
+                    ' boxNum=3         -->          4              +            0
+                    ' boxNum=4         -->          0              +            4
+                    Dim nextBoxNum As Int32 = ((boxNum + 1) Mod 5) + ((6 Mod boxNum) * 2)
+                    'Dim nextBoxNum As Int32 = ((boxNum) Mod 4) + 1
+                    ''If boxName.Contains("IP2") And nextBoxNum = 1 Then nextBoxNum += 1
+                    Dim nextBoxName As String = boxName.Remove(boxName.Length - 1) + nextBoxNum.ToString
+                    Me.Controls.Find(nextBoxName, True).First().Focus()
+                End If
             End If
         End If
 

@@ -39,37 +39,37 @@ Partial Class AddIPRange
         Me.Rbtn_StandardRange = New System.Windows.Forms.RadioButton()
         Me.Rbtn_CustomRange = New System.Windows.Forms.RadioButton()
         Me.grp_StandardRange = New System.Windows.Forms.GroupBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.tbox_RangeIP4 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.tbox_RangeIP3 = New System.Windows.Forms.TextBox()
-        Me.cbox_subnet = New System.Windows.Forms.ComboBox()
-        Me.tbox_RangeIP2 = New System.Windows.Forms.TextBox()
-        Me.tbox_RangeIP1 = New System.Windows.Forms.TextBox()
         Me.lbl_standardrange = New System.Windows.Forms.Label()
+        Me.tbox_RangeIP1 = New System.Windows.Forms.TextBox()
+        Me.tbox_RangeIP2 = New System.Windows.Forms.TextBox()
+        Me.cbox_subnet = New System.Windows.Forms.ComboBox()
+        Me.tbox_RangeIP3 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.tbox_RangeIP4 = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.grp_CustomRange = New System.Windows.Forms.GroupBox()
-        Me.chkbox3 = New System.Windows.Forms.CheckBox()
-        Me.chkbox2 = New System.Windows.Forms.CheckBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.tbox_IP2_4 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.tbox_IP2_3 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.tbox_IP2_2 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.tbox_IP2_1 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.tbox_IP1_4 = New System.Windows.Forms.TextBox()
-        Me.tbox_IP1_3 = New System.Windows.Forms.TextBox()
-        Me.tbox_IP1_2 = New System.Windows.Forms.TextBox()
-        Me.chkbox1 = New System.Windows.Forms.CheckBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.tbox_IP1_1 = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.tbox_IP1_1 = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.chkbox1 = New System.Windows.Forms.CheckBox()
+        Me.tbox_IP1_2 = New System.Windows.Forms.TextBox()
+        Me.tbox_IP1_3 = New System.Windows.Forms.TextBox()
+        Me.tbox_IP1_4 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.tbox_IP2_1 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.tbox_IP2_2 = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.tbox_IP2_3 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.tbox_IP2_4 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.chkbox2 = New System.Windows.Forms.CheckBox()
+        Me.chkbox3 = New System.Windows.Forms.CheckBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.menu_deleteaddress.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -171,7 +171,7 @@ Partial Class AddIPRange
         Me.btn_Stop.BackColor = System.Drawing.Color.SkyBlue
         Me.btn_Stop.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btn_Stop.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_Stop.Location = New System.Drawing.Point(438, 5)
+        Me.btn_Stop.Location = New System.Drawing.Point(438, 7)
         Me.btn_Stop.Name = "btn_Stop"
         Me.btn_Stop.Size = New System.Drawing.Size(80, 31)
         Me.btn_Stop.TabIndex = 3
@@ -228,55 +228,37 @@ Partial Class AddIPRange
         Me.grp_StandardRange.TabStop = False
         Me.grp_StandardRange.Text = "Standard IP Range"
         '
-        'Label9
+        'lbl_standardrange
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Tahoma", 9.0!)
-        Me.Label9.Location = New System.Drawing.Point(54, 36)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(11, 14)
-        Me.Label9.TabIndex = 28
-        Me.Label9.Text = "."
+        Me.lbl_standardrange.AutoSize = True
+        Me.lbl_standardrange.Enabled = False
+        Me.lbl_standardrange.Font = New System.Drawing.Font("Tahoma", 9.0!)
+        Me.lbl_standardrange.ForeColor = System.Drawing.Color.DimGray
+        Me.lbl_standardrange.Location = New System.Drawing.Point(18, 70)
+        Me.lbl_standardrange.Name = "lbl_standardrange"
+        Me.lbl_standardrange.Size = New System.Drawing.Size(0, 14)
+        Me.lbl_standardrange.TabIndex = 37
+        Me.lbl_standardrange.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label8
+        'tbox_RangeIP1
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Tahoma", 9.0!)
-        Me.Label8.Location = New System.Drawing.Point(105, 36)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(11, 14)
-        Me.Label8.TabIndex = 29
-        Me.Label8.Text = "."
+        Me.tbox_RangeIP1.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbox_RangeIP1.Location = New System.Drawing.Point(17, 32)
+        Me.tbox_RangeIP1.MaxLength = 3
+        Me.tbox_RangeIP1.Name = "tbox_RangeIP1"
+        Me.tbox_RangeIP1.Size = New System.Drawing.Size(34, 22)
+        Me.tbox_RangeIP1.TabIndex = 0
+        Me.tbox_RangeIP1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'tbox_RangeIP4
+        'tbox_RangeIP2
         '
-        Me.tbox_RangeIP4.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbox_RangeIP4.Location = New System.Drawing.Point(170, 32)
-        Me.tbox_RangeIP4.MaxLength = 3
-        Me.tbox_RangeIP4.Name = "tbox_RangeIP4"
-        Me.tbox_RangeIP4.Size = New System.Drawing.Size(34, 22)
-        Me.tbox_RangeIP4.TabIndex = 22
-        Me.tbox_RangeIP4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Tahoma", 9.0!)
-        Me.Label7.Location = New System.Drawing.Point(156, 36)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(11, 14)
-        Me.Label7.TabIndex = 3
-        Me.Label7.Text = "."
-        '
-        'tbox_RangeIP3
-        '
-        Me.tbox_RangeIP3.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbox_RangeIP3.Location = New System.Drawing.Point(119, 32)
-        Me.tbox_RangeIP3.MaxLength = 3
-        Me.tbox_RangeIP3.Name = "tbox_RangeIP3"
-        Me.tbox_RangeIP3.Size = New System.Drawing.Size(34, 22)
-        Me.tbox_RangeIP3.TabIndex = 2
-        Me.tbox_RangeIP3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.tbox_RangeIP2.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbox_RangeIP2.Location = New System.Drawing.Point(68, 32)
+        Me.tbox_RangeIP2.MaxLength = 3
+        Me.tbox_RangeIP2.Name = "tbox_RangeIP2"
+        Me.tbox_RangeIP2.Size = New System.Drawing.Size(34, 22)
+        Me.tbox_RangeIP2.TabIndex = 1
+        Me.tbox_RangeIP2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'cbox_subnet
         '
@@ -289,37 +271,55 @@ Partial Class AddIPRange
         Me.cbox_subnet.Size = New System.Drawing.Size(110, 22)
         Me.cbox_subnet.TabIndex = 4
         '
-        'tbox_RangeIP2
+        'tbox_RangeIP3
         '
-        Me.tbox_RangeIP2.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbox_RangeIP2.Location = New System.Drawing.Point(68, 32)
-        Me.tbox_RangeIP2.MaxLength = 3
-        Me.tbox_RangeIP2.Name = "tbox_RangeIP2"
-        Me.tbox_RangeIP2.Size = New System.Drawing.Size(34, 22)
-        Me.tbox_RangeIP2.TabIndex = 1
-        Me.tbox_RangeIP2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.tbox_RangeIP3.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbox_RangeIP3.Location = New System.Drawing.Point(119, 32)
+        Me.tbox_RangeIP3.MaxLength = 3
+        Me.tbox_RangeIP3.Name = "tbox_RangeIP3"
+        Me.tbox_RangeIP3.Size = New System.Drawing.Size(34, 22)
+        Me.tbox_RangeIP3.TabIndex = 2
+        Me.tbox_RangeIP3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'tbox_RangeIP1
+        'Label7
         '
-        Me.tbox_RangeIP1.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbox_RangeIP1.Location = New System.Drawing.Point(17, 32)
-        Me.tbox_RangeIP1.MaxLength = 3
-        Me.tbox_RangeIP1.Name = "tbox_RangeIP1"
-        Me.tbox_RangeIP1.Size = New System.Drawing.Size(34, 22)
-        Me.tbox_RangeIP1.TabIndex = 0
-        Me.tbox_RangeIP1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Tahoma", 9.0!)
+        Me.Label7.Location = New System.Drawing.Point(156, 36)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(11, 14)
+        Me.Label7.TabIndex = 3
+        Me.Label7.Text = "."
         '
-        'lbl_standardrange
+        'tbox_RangeIP4
         '
-        Me.lbl_standardrange.AutoSize = True
-        Me.lbl_standardrange.Enabled = False
-        Me.lbl_standardrange.Font = New System.Drawing.Font("Tahoma", 9.0!)
-        Me.lbl_standardrange.ForeColor = System.Drawing.Color.DimGray
-        Me.lbl_standardrange.Location = New System.Drawing.Point(18, 70)
-        Me.lbl_standardrange.Name = "lbl_standardrange"
-        Me.lbl_standardrange.Size = New System.Drawing.Size(0, 14)
-        Me.lbl_standardrange.TabIndex = 37
-        Me.lbl_standardrange.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tbox_RangeIP4.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbox_RangeIP4.Location = New System.Drawing.Point(170, 32)
+        Me.tbox_RangeIP4.MaxLength = 3
+        Me.tbox_RangeIP4.Name = "tbox_RangeIP4"
+        Me.tbox_RangeIP4.Size = New System.Drawing.Size(34, 22)
+        Me.tbox_RangeIP4.TabIndex = 22
+        Me.tbox_RangeIP4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Tahoma", 9.0!)
+        Me.Label8.Location = New System.Drawing.Point(105, 36)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(11, 14)
+        Me.Label8.TabIndex = 29
+        Me.Label8.Text = "."
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Tahoma", 9.0!)
+        Me.Label9.Location = New System.Drawing.Point(54, 36)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(11, 14)
+        Me.Label9.TabIndex = 28
+        Me.Label9.Text = "."
         '
         'grp_CustomRange
         '
@@ -352,188 +352,27 @@ Partial Class AddIPRange
         Me.grp_CustomRange.TabStop = False
         Me.grp_CustomRange.Text = "Special Custom Range"
         '
-        'chkbox3
+        'Label12
         '
-        Me.chkbox3.AutoSize = True
-        Me.chkbox3.Location = New System.Drawing.Point(263, 105)
-        Me.chkbox3.Name = "chkbox3"
-        Me.chkbox3.Size = New System.Drawing.Size(15, 14)
-        Me.chkbox3.TabIndex = 12
-        Me.chkbox3.UseVisualStyleBackColor = True
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Tahoma", 9.0!)
+        Me.Label12.Location = New System.Drawing.Point(18, 73)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(81, 14)
+        Me.Label12.TabIndex = 35
+        Me.Label12.Text = "Start Address"
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'chkbox2
+        'Label13
         '
-        Me.chkbox2.AutoSize = True
-        Me.chkbox2.Location = New System.Drawing.Point(212, 105)
-        Me.chkbox2.Name = "chkbox2"
-        Me.chkbox2.Size = New System.Drawing.Size(15, 14)
-        Me.chkbox2.TabIndex = 11
-        Me.chkbox2.UseVisualStyleBackColor = True
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Tahoma", 9.0!)
-        Me.Label2.Location = New System.Drawing.Point(194, 74)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(11, 14)
-        Me.Label2.TabIndex = 23
-        Me.Label2.Text = "."
-        '
-        'tbox_IP2_4
-        '
-        Me.tbox_IP2_4.Enabled = False
-        Me.tbox_IP2_4.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbox_IP2_4.Location = New System.Drawing.Point(259, 127)
-        Me.tbox_IP2_4.MaxLength = 3
-        Me.tbox_IP2_4.Name = "tbox_IP2_4"
-        Me.tbox_IP2_4.Size = New System.Drawing.Size(34, 22)
-        Me.tbox_IP2_4.TabIndex = 11
-        Me.tbox_IP2_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Tahoma", 9.0!)
-        Me.Label3.Location = New System.Drawing.Point(245, 74)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(11, 14)
-        Me.Label3.TabIndex = 24
-        Me.Label3.Text = "."
-        '
-        'tbox_IP2_3
-        '
-        Me.tbox_IP2_3.Enabled = False
-        Me.tbox_IP2_3.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbox_IP2_3.Location = New System.Drawing.Point(208, 127)
-        Me.tbox_IP2_3.MaxLength = 3
-        Me.tbox_IP2_3.Name = "tbox_IP2_3"
-        Me.tbox_IP2_3.Size = New System.Drawing.Size(34, 22)
-        Me.tbox_IP2_3.TabIndex = 8
-        Me.tbox_IP2_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Tahoma", 9.0!)
-        Me.Label6.Location = New System.Drawing.Point(143, 131)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(11, 14)
-        Me.Label6.TabIndex = 25
-        Me.Label6.Text = "."
-        '
-        'tbox_IP2_2
-        '
-        Me.tbox_IP2_2.Enabled = False
-        Me.tbox_IP2_2.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbox_IP2_2.Location = New System.Drawing.Point(157, 127)
-        Me.tbox_IP2_2.MaxLength = 3
-        Me.tbox_IP2_2.Name = "tbox_IP2_2"
-        Me.tbox_IP2_2.Size = New System.Drawing.Size(34, 22)
-        Me.tbox_IP2_2.TabIndex = 5
-        Me.tbox_IP2_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Tahoma", 9.0!)
-        Me.Label5.Location = New System.Drawing.Point(194, 131)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(11, 14)
-        Me.Label5.TabIndex = 7
-        Me.Label5.Text = "."
-        '
-        'tbox_IP2_1
-        '
-        Me.tbox_IP2_1.Enabled = False
-        Me.tbox_IP2_1.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbox_IP2_1.Location = New System.Drawing.Point(106, 127)
-        Me.tbox_IP2_1.MaxLength = 3
-        Me.tbox_IP2_1.Name = "tbox_IP2_1"
-        Me.tbox_IP2_1.Size = New System.Drawing.Size(34, 22)
-        Me.tbox_IP2_1.TabIndex = 4
-        Me.tbox_IP2_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Tahoma", 9.0!)
-        Me.Label4.Location = New System.Drawing.Point(245, 131)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(11, 14)
-        Me.Label4.TabIndex = 9
-        Me.Label4.Text = "."
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Tahoma", 9.0!)
-        Me.Label1.Location = New System.Drawing.Point(143, 74)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(11, 14)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "."
-        '
-        'tbox_IP1_4
-        '
-        Me.tbox_IP1_4.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbox_IP1_4.Location = New System.Drawing.Point(259, 70)
-        Me.tbox_IP1_4.MaxLength = 3
-        Me.tbox_IP1_4.Name = "tbox_IP1_4"
-        Me.tbox_IP1_4.Size = New System.Drawing.Size(34, 22)
-        Me.tbox_IP1_4.TabIndex = 3
-        Me.tbox_IP1_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'tbox_IP1_3
-        '
-        Me.tbox_IP1_3.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbox_IP1_3.Location = New System.Drawing.Point(208, 70)
-        Me.tbox_IP1_3.MaxLength = 3
-        Me.tbox_IP1_3.Name = "tbox_IP1_3"
-        Me.tbox_IP1_3.Size = New System.Drawing.Size(34, 22)
-        Me.tbox_IP1_3.TabIndex = 2
-        Me.tbox_IP1_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'tbox_IP1_2
-        '
-        Me.tbox_IP1_2.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbox_IP1_2.Location = New System.Drawing.Point(157, 70)
-        Me.tbox_IP1_2.MaxLength = 3
-        Me.tbox_IP1_2.Name = "tbox_IP1_2"
-        Me.tbox_IP1_2.Size = New System.Drawing.Size(34, 22)
-        Me.tbox_IP1_2.TabIndex = 1
-        Me.tbox_IP1_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'chkbox1
-        '
-        Me.chkbox1.AutoSize = True
-        Me.chkbox1.Location = New System.Drawing.Point(161, 105)
-        Me.chkbox1.Name = "chkbox1"
-        Me.chkbox1.Size = New System.Drawing.Size(15, 14)
-        Me.chkbox1.TabIndex = 10
-        Me.chkbox1.UseVisualStyleBackColor = True
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Tahoma", 9.0!)
-        Me.Label10.ForeColor = System.Drawing.Color.Navy
-        Me.Label10.Location = New System.Drawing.Point(9, 18)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(284, 14)
-        Me.Label10.TabIndex = 28
-        Me.Label10.Text = "This will create custom range of IP addresses, only"
-        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'tbox_IP1_1
-        '
-        Me.tbox_IP1_1.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbox_IP1_1.Location = New System.Drawing.Point(106, 70)
-        Me.tbox_IP1_1.MaxLength = 3
-        Me.tbox_IP1_1.Name = "tbox_IP1_1"
-        Me.tbox_IP1_1.Size = New System.Drawing.Size(34, 22)
-        Me.tbox_IP1_1.TabIndex = 0
-        Me.tbox_IP1_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Tahoma", 9.0!)
+        Me.Label13.Location = New System.Drawing.Point(18, 130)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(75, 14)
+        Me.Label13.TabIndex = 36
+        Me.Label13.Text = "End Address"
+        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label11
         '
@@ -547,27 +386,188 @@ Partial Class AddIPRange
         Me.Label11.Text = "crossponding section to checked boxes will vary."
         Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label13
+        'tbox_IP1_1
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Tahoma", 9.0!)
-        Me.Label13.Location = New System.Drawing.Point(18, 130)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(75, 14)
-        Me.Label13.TabIndex = 36
-        Me.Label13.Text = "End Address"
-        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tbox_IP1_1.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbox_IP1_1.Location = New System.Drawing.Point(106, 70)
+        Me.tbox_IP1_1.MaxLength = 3
+        Me.tbox_IP1_1.Name = "tbox_IP1_1"
+        Me.tbox_IP1_1.Size = New System.Drawing.Size(34, 22)
+        Me.tbox_IP1_1.TabIndex = 0
+        Me.tbox_IP1_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label12
+        'Label10
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Tahoma", 9.0!)
-        Me.Label12.Location = New System.Drawing.Point(18, 73)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(81, 14)
-        Me.Label12.TabIndex = 35
-        Me.Label12.Text = "Start Address"
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Tahoma", 9.0!)
+        Me.Label10.ForeColor = System.Drawing.Color.Navy
+        Me.Label10.Location = New System.Drawing.Point(9, 18)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(284, 14)
+        Me.Label10.TabIndex = 28
+        Me.Label10.Text = "This will create custom range of IP addresses, only"
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'chkbox1
+        '
+        Me.chkbox1.AutoSize = True
+        Me.chkbox1.Location = New System.Drawing.Point(161, 105)
+        Me.chkbox1.Name = "chkbox1"
+        Me.chkbox1.Size = New System.Drawing.Size(15, 14)
+        Me.chkbox1.TabIndex = 10
+        Me.chkbox1.UseVisualStyleBackColor = True
+        '
+        'tbox_IP1_2
+        '
+        Me.tbox_IP1_2.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbox_IP1_2.Location = New System.Drawing.Point(157, 70)
+        Me.tbox_IP1_2.MaxLength = 3
+        Me.tbox_IP1_2.Name = "tbox_IP1_2"
+        Me.tbox_IP1_2.Size = New System.Drawing.Size(34, 22)
+        Me.tbox_IP1_2.TabIndex = 1
+        Me.tbox_IP1_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'tbox_IP1_3
+        '
+        Me.tbox_IP1_3.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbox_IP1_3.Location = New System.Drawing.Point(208, 70)
+        Me.tbox_IP1_3.MaxLength = 3
+        Me.tbox_IP1_3.Name = "tbox_IP1_3"
+        Me.tbox_IP1_3.Size = New System.Drawing.Size(34, 22)
+        Me.tbox_IP1_3.TabIndex = 2
+        Me.tbox_IP1_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'tbox_IP1_4
+        '
+        Me.tbox_IP1_4.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbox_IP1_4.Location = New System.Drawing.Point(259, 70)
+        Me.tbox_IP1_4.MaxLength = 3
+        Me.tbox_IP1_4.Name = "tbox_IP1_4"
+        Me.tbox_IP1_4.Size = New System.Drawing.Size(34, 22)
+        Me.tbox_IP1_4.TabIndex = 3
+        Me.tbox_IP1_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Tahoma", 9.0!)
+        Me.Label1.Location = New System.Drawing.Point(143, 74)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(11, 14)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "."
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Tahoma", 9.0!)
+        Me.Label4.Location = New System.Drawing.Point(245, 131)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(11, 14)
+        Me.Label4.TabIndex = 9
+        Me.Label4.Text = "."
+        '
+        'tbox_IP2_1
+        '
+        Me.tbox_IP2_1.Enabled = False
+        Me.tbox_IP2_1.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbox_IP2_1.Location = New System.Drawing.Point(106, 127)
+        Me.tbox_IP2_1.MaxLength = 3
+        Me.tbox_IP2_1.Name = "tbox_IP2_1"
+        Me.tbox_IP2_1.Size = New System.Drawing.Size(34, 22)
+        Me.tbox_IP2_1.TabIndex = 4
+        Me.tbox_IP2_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Tahoma", 9.0!)
+        Me.Label5.Location = New System.Drawing.Point(194, 131)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(11, 14)
+        Me.Label5.TabIndex = 7
+        Me.Label5.Text = "."
+        '
+        'tbox_IP2_2
+        '
+        Me.tbox_IP2_2.Enabled = False
+        Me.tbox_IP2_2.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbox_IP2_2.Location = New System.Drawing.Point(157, 127)
+        Me.tbox_IP2_2.MaxLength = 3
+        Me.tbox_IP2_2.Name = "tbox_IP2_2"
+        Me.tbox_IP2_2.Size = New System.Drawing.Size(34, 22)
+        Me.tbox_IP2_2.TabIndex = 5
+        Me.tbox_IP2_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Tahoma", 9.0!)
+        Me.Label6.Location = New System.Drawing.Point(143, 131)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(11, 14)
+        Me.Label6.TabIndex = 25
+        Me.Label6.Text = "."
+        '
+        'tbox_IP2_3
+        '
+        Me.tbox_IP2_3.Enabled = False
+        Me.tbox_IP2_3.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbox_IP2_3.Location = New System.Drawing.Point(208, 127)
+        Me.tbox_IP2_3.MaxLength = 3
+        Me.tbox_IP2_3.Name = "tbox_IP2_3"
+        Me.tbox_IP2_3.Size = New System.Drawing.Size(34, 22)
+        Me.tbox_IP2_3.TabIndex = 8
+        Me.tbox_IP2_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Tahoma", 9.0!)
+        Me.Label3.Location = New System.Drawing.Point(245, 74)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(11, 14)
+        Me.Label3.TabIndex = 24
+        Me.Label3.Text = "."
+        '
+        'tbox_IP2_4
+        '
+        Me.tbox_IP2_4.Enabled = False
+        Me.tbox_IP2_4.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbox_IP2_4.Location = New System.Drawing.Point(259, 127)
+        Me.tbox_IP2_4.MaxLength = 3
+        Me.tbox_IP2_4.Name = "tbox_IP2_4"
+        Me.tbox_IP2_4.Size = New System.Drawing.Size(34, 22)
+        Me.tbox_IP2_4.TabIndex = 11
+        Me.tbox_IP2_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Tahoma", 9.0!)
+        Me.Label2.Location = New System.Drawing.Point(194, 74)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(11, 14)
+        Me.Label2.TabIndex = 23
+        Me.Label2.Text = "."
+        '
+        'chkbox2
+        '
+        Me.chkbox2.AutoSize = True
+        Me.chkbox2.Location = New System.Drawing.Point(212, 105)
+        Me.chkbox2.Name = "chkbox2"
+        Me.chkbox2.Size = New System.Drawing.Size(15, 14)
+        Me.chkbox2.TabIndex = 11
+        Me.chkbox2.UseVisualStyleBackColor = True
+        '
+        'chkbox3
+        '
+        Me.chkbox3.AutoSize = True
+        Me.chkbox3.Location = New System.Drawing.Point(263, 105)
+        Me.chkbox3.Name = "chkbox3"
+        Me.chkbox3.Size = New System.Drawing.Size(15, 14)
+        Me.chkbox3.TabIndex = 12
+        Me.chkbox3.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
